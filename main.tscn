@@ -1,0 +1,151 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://Roboto-Regular.ttf" type="DynamicFontData" id=1]
+[ext_resource path="res://main.gd" type="Script" id=2]
+
+[sub_resource type="DynamicFont" id=1]
+size = 25
+use_filter = true
+font_data = ExtResource( 1 )
+
+[sub_resource type="DynamicFont" id=2]
+size = 25
+use_mipmaps = true
+use_filter = true
+font_data = ExtResource( 1 )
+
+[node name="Node" type="Node"]
+script = ExtResource( 2 )
+
+[node name="Control" type="Control" parent="."]
+anchor_right = 1.0
+anchor_bottom = 1.0
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="list" type="VBoxContainer" parent="Control"]
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+margin_left = -142.0
+margin_top = -192.624
+margin_right = 143.0
+margin_bottom = 268.375
+custom_constants/separation = 16
+__meta__ = {
+"_edit_group_": true,
+"_edit_use_anchors_": false
+}
+
+[node name="Fisika" type="Button" parent="Control/list"]
+margin_right = 285.0
+margin_bottom = 37.0
+custom_fonts/font = SubResource( 1 )
+text = "Praktikum fisika"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Aljabar" type="Button" parent="Control/list"]
+margin_top = 53.0
+margin_right = 285.0
+margin_bottom = 90.0
+custom_fonts/font = SubResource( 1 )
+text = "Aljabar linier"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Binggris" type="Button" parent="Control/list"]
+margin_top = 106.0
+margin_right = 285.0
+margin_bottom = 143.0
+custom_fonts/font = SubResource( 1 )
+text = "Bahasa inggris 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Graph" type="Button" parent="Control/list"]
+margin_top = 159.0
+margin_right = 285.0
+margin_bottom = 196.0
+custom_fonts/font = SubResource( 1 )
+text = "Graph terapan"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Matematika" type="Button" parent="Control/list"]
+margin_top = 212.0
+margin_right = 285.0
+margin_bottom = 249.0
+custom_fonts/font = SubResource( 1 )
+text = "Matematika diskrit"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="SistemBerkas" type="Button" parent="Control/list"]
+margin_top = 265.0
+margin_right = 285.0
+margin_bottom = 302.0
+custom_fonts/font = SubResource( 1 )
+text = "Sistem berkas"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Statistik" type="Button" parent="Control/list"]
+margin_top = 318.0
+margin_right = 285.0
+margin_bottom = 355.0
+custom_fonts/font = SubResource( 1 )
+text = "Statistika dasar"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Jarkom" type="Button" parent="Control/list"]
+margin_top = 371.0
+margin_right = 285.0
+margin_bottom = 408.0
+custom_fonts/font = SubResource( 1 )
+text = "Jaringan komputer"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Struktur" type="Button" parent="Control/list"]
+margin_top = 424.0
+margin_right = 285.0
+margin_bottom = 461.0
+custom_fonts/font = SubResource( 1 )
+text = "Struktur data"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="Label" type="Label" parent="Control"]
+anchor_left = 0.5
+anchor_right = 0.5
+margin_left = -72.0
+margin_top = 41.4283
+margin_right = 72.0
+margin_bottom = 72.4283
+custom_fonts/font = SubResource( 2 )
+text = "SEMESTER 3"
+__meta__ = {
+"_edit_use_anchors_": false
+}
+[connection signal="pressed" from="Control/list/Fisika" to="." method="_on_Fisika_pressed"]
+[connection signal="pressed" from="Control/list/Aljabar" to="." method="_on_Aljabar_pressed"]
+[connection signal="pressed" from="Control/list/Binggris" to="." method="_on_Binggris_pressed"]
+[connection signal="pressed" from="Control/list/Graph" to="." method="_on_Graph_pressed"]
+[connection signal="pressed" from="Control/list/Matematika" to="." method="_on_Matematika_pressed"]
+[connection signal="pressed" from="Control/list/SistemBerkas" to="." method="_on_SistemBerkas_pressed"]
+[connection signal="pressed" from="Control/list/Statistik" to="." method="_on_Statistik_pressed"]
+[connection signal="pressed" from="Control/list/Jarkom" to="." method="_on_Jarkom_pressed"]
+[connection signal="pressed" from="Control/list/Struktur" to="." method="_on_Struktur_pressed"]
